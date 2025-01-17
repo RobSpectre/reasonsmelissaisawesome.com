@@ -14,7 +14,7 @@ const carouselConfig = {
   height: 500,
   itemsToShow: 8,
   wrapAround: true,
-  autoplay: 400
+  autoplay: 1200
 }
 
 
