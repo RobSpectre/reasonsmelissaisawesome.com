@@ -1,0 +1,13 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap')
+
+@mixin inter-tight($weight: 400)
+  font-family: 'Inter Tight', serif
+  font-weight: $weight
+
+html, body
+  @include inter-tight(300)
+  @apply bg-stone-900
