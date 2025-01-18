@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from 'vue'
 
+import Header from '@/components/Header.vue'
 import Submit from '@/components/Submit.vue'
 import ReasonsList from '@/components/ReasonsList.vue'
 import Title from '@/components/Title.vue'
@@ -16,6 +17,7 @@ onMounted( async () => {
 
 <template lang='pug'>
 .min-h-screen.flex.flex-col.items-center.justify-center
+  Header
   Title
   Submit
   ReasonsList(:reasons='reasonsStore.reasons')
