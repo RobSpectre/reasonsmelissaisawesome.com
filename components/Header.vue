@@ -14,5 +14,5 @@ Head
   Meta(name='twitter:title' content="Reasons Melissa Is Awesome - a parting gift to our pal leaving New York.")
   Meta(name='twitter:description' content="A list of all the reasons our friend Melissa is awesome.")
   Meta(name='twitter:image' content='https://reasonsmelissaisawesome.com/images/social-1080x1350.jpg')
-  Link(rel='icon' type='image/svg+xml' href='/images/favicon.svg')
+  Link(rel='icon' type='image/svg+xml' href='/favicon.svg')
 </template>

@@ -1,5 +1,5 @@
 <template lang='pug'>
-.w-full.text-white.flex.items-center.justify-center
+.w-full.flex.items-center.justify-center
   h1 Reasons
     span.title Melissa!
     | is awesome

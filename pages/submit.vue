@@ -18,7 +18,8 @@ onMounted( async () => {
 <template lang='pug'>
 .min-h-screen.flex.flex-col.items-center.justify-center
   Header
-  Title
+  .text-white
+    Title
   Submit
   ReasonsList(:reasons='reasonsStore.reasons')
 </template>
