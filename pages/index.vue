@@ -5,13 +5,8 @@ import Header from '@/components/Header.vue'
 import ReasonsList from '~/components/ReasonsList.vue'
 import Title from '@/components/Title.vue'
 
-import { useReasons } from '@/stores/reasons'
+import reasons from '@/assets/data/reasons.json'
 
-const reasonsStore = useReasons()
-
-onMounted( async () => {
-  reasonsStore.subscribeToReasons()
-})
 </script>
 
 <template lang='pug'>
@@ -19,14 +14,14 @@ onMounted( async () => {
   Header
   .text-white
     Title
-  ReasonsList(:reasons='reasonsStore.reasons')
+  ReasonsList(:reasons='reasons')
 .hidden.print-wrapper(class="print:block")
     .centered-content.text-stone-900
       Title
     .text-content.uppercase.text-2xl.text-stone-800
       p.inline.ml-2(
-        v-if='reasonsStore.reasons'
-        v-for='reason in reasonsStore.reasons'
+        v-if='reasons'
+        v-for='reason in reasons'
       ) 
         | {{ reason.text }} |
 </template>
@@ -87,7 +82,7 @@ onMounted( async () => {
   }
 
   p {
-    font-size: 1.56rem;
+    font-size: 0.86rem;
     margin-bottom: 1rem; /* optional spacing between paragraphs */
   }
 
