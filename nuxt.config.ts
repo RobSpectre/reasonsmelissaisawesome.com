@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
     'vue3-carousel-nuxt'
   ],
   css: ['~/assets/sass/style.sass'],
